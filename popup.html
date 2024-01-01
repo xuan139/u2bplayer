@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      width: 640px;
+    }
+
+    #main {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #333;
+            transition: all 0.3s ease; /* Add transition for smooth resizing */
+        }
+
+    #result {
+      width: 100%; /* Set the width of #result */
+      color: black; /* Set the font color to blue */
+      font-size: 14px; /* Set the font size to 16 pixels (adjust as needed) */
+    }
+  </style>
+  <script src="popup.js"></script>
+  <title>Player</title>
+</head>
+
+<body>
+
+
+  <div id="main" style="width: 640px; height: 480px;">
+    <!-- Content inside #main -->
+    
+    <!-- <a href={{url}} target="_blank">Open in New Page</a> -->
+    <!-- <h3>{{url}}</h3> -->
+
+    <video id="myVideo" style="width: 100%; height: 100%;" controls></video>
+    <div id="vtt" style="font-family: 'Arial', sans-serif; font-size: 12px; color: #333;"></div>
+    <div id="result" style="font-family: 'Arial', sans-serif; font-size: 12px; color: #333;"></div>
+    <div id="caption" style="font-family: 'Arial', sans-serif; font-size: 12px; color: #333;"></div>
+
+    <p></p>
+</div>
+</body>
+</html>

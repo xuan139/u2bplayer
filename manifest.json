@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "u2b player",
+    "version": "1.0",
+    "description": "u2b playe",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_icon": "ext.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "ext.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
+  
